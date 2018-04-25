@@ -12,7 +12,8 @@ module.exports = {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' },
+      { rel: 'stylesheet', href:'https://unpkg.com/vuetify/dist/vuetify.min.css'}
     ]
   },
   /*
@@ -36,5 +37,7 @@ module.exports = {
         })
       }
     }
-  }
+  },
+
+  plugins: ['~/plugins/vuetify.js']
 }
