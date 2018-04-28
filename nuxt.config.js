@@ -16,14 +16,27 @@ module.exports = {
       { rel: 'stylesheet', href:'https://unpkg.com/vuetify/dist/vuetify.min.css'}
     ]
   },
+
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
+    plugins: [
+      { src: '~/plugins/vuetify.js', ssr: false }
+    ],
+
+  
   /*
   ** Build configuration
   */
   build: {
+    vendor: [
+      '~/plugins/vuetify.js',
+    ],
+    extractCSS: true,
+
+  
     /*
     ** Run ESLint on save
     */
@@ -37,7 +50,5 @@ module.exports = {
         })
       }
     }
-  },
-
-  plugins: ['~/plugins/vuetify.js']
+  }
 }

@@ -1,6 +1,6 @@
 <template>
 <div class=projects>
-    <div class="card">
+    <!-- <div class="card">
         <div class="card-content">
             <p class="title">
                 Burger Queen
@@ -21,26 +21,69 @@
                 </span>
             </p>
         </footer>
-    </div>
-    <v-layout>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card>
-        <v-card-media src='assets/github.png' height="200px">
-        </v-card-media>
-        <v-card-title primary-title>
-          <div>
-            <h3 class="headline mb-0">Kangaroo Valley Safari</h3>
-            <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
-          </div>
-        </v-card-title>
-        <v-card-actions>
-          <v-btn flat color="orange">Share</v-btn>
-          <v-btn flat color="orange">Explore</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+    </div> -->
+
+    <!-- <div id='issaCard'>
+        <v-layout>
+            <v-flex xs12 sm6 offset-sm3>
+                <div id="vCards">
+                <v-card>
+                    <v-card-media v-for="card in cards" :key="card.title">
+                        <img class='media' src="~/assets/github.png"> 
+                    </v-card-media>
+                    <v-card-title primary-title>
+                    <div>
+                        <h3 class="headline mb-0"> {{card.title}}</h3>
+                        <div>Located two hours south of Sydney in the <br>Southern Highlands of New South Wales, ...</div>
+                    </div>
+                    </v-card-title>
+                    <v-card-actions>
+                        <v-btn flat color="orange">Share</v-btn>
+                        <v-btn flat color="orange">Explore</v-btn>
+                    </v-card-actions>
+                </v-card>
+                </div>
+            </v-flex>
+        </v-layout>
+    </div> -->
+
+  <ol>
+    <li v-for="todo in todos" :key="todo">
+      {{ todo.text }}
+    </li>
+  </ol>
 </div>
+
 </template>
+
+<style>
+    #issaCard {
+        padding-top: 2em;
+    }
+
+    .media {
+        size: 2em;
+    }
+
+</style>
+<script>
+
+  export default {
+    data: () => ({
+      cards: [
+        {title: 'Project1', src: '/static/github.png'},
+        {title: 'Project2', src: '/static/github.png'},
+        {title: 'Project3', src: '/static/github.png'}
+      ],
+      todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ]
+    })
+    
+  }
+  
+</script>
 
 

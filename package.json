@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "ks-vue-fullpage": "^1.2.8",
     "nuxt": "^1.0.0",
     "vuetify": "^1.0.17"
   },

@@ -19,6 +19,7 @@
   align-items: center;
   text-align: center;
   font-weight: 300;
-  font-size: 6em;
+  font-size: 12em;
 }
 </style>
+ 
