@@ -1,28 +1,32 @@
 <template>
 <div class=projects>
-    <!-- <div class="card">
+    <div class="container">
+    <div id="items">
+    <div class="columns is-mobile">
+    <!-- <div class="column is-three-fifths is-offset-one-quarter"> -->
+    <v-flex xs10 offset-xs1>
+    <div class="card" v-for="card in cards" :key="card">
         <div class="card-content">
             <p class="title">
-                Burger Queen
+                {{card.title}}
             </p>
             <p class="subtitle">
-            Java
+                {{card.title}}
             </p>
         </div>
         <footer class="card-footer">
             <p class="card-footer-item">
                 <span>
-                    View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-                </span>
-            </p>
-            <p class="card-footer-item">
-                <span>
-                    Share on <a href="#">Facebook</a>
+                    View on <a href="https://twitter.com/codinghorror/status/506010907021828096">GitHub</a>
                 </span>
             </p>
         </footer>
-    </div> -->
-
+    </div>
+    </v-flex>
+    <!-- </div> -->
+    </div>
+    </div>
+    </div>
     <!-- <div id='issaCard'>
         <v-layout>
             <v-flex xs12 sm6 offset-sm3>
@@ -59,10 +63,26 @@
 <style>
     #issaCard {
         padding-top: 2em;
+        width: 50em;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
     .media {
         size: 2em;
+    }swqqQ
+    .card {
+        margin-top: 2em;
+    }
+
+    #items {
+        /* padding: 4em 15em 4em 15em; */
+        /* padding-top: 4em;
+        padding-left: 15em;
+        padding-right: 15em; */
+        background-color:lightblue;
     }
 
 </style>
@@ -71,9 +91,9 @@
   export default {
     data: () => ({
       cards: [
-        {title: 'Project1', src: '/static/github.png'},
-        {title: 'Project2', src: '/static/github.png'},
-        {title: 'Project3', src: '/static/github.png'}
+        {title: 'Project1', link: '/static/github.png', description:''},
+        {title: 'Project1', link: '/static/github.png', description:''},
+        {title: 'Project1', link: '/static/github.png', description:''}
       ],
       todos: [
       { text: 'Learn JavaScript' },
