@@ -2,8 +2,6 @@
 <div class=projects>
     <div class="container">
     <div id="items">
-    <div class="columns is-mobile">
-    <!-- <div class="column is-three-fifths is-offset-one-quarter"> -->
     <v-flex xs10 offset-xs1>
     <div class="card" v-for="card in cards" :key="card">
         <div class="card-content">
@@ -11,7 +9,7 @@
                 {{card.title}}
             </p>
             <p class="subtitle">
-                {{card.title}}
+                {{card.description}}
             </p>
         </div>
         <footer class="card-footer">
@@ -23,8 +21,6 @@
         </footer>
     </div>
     </v-flex>
-    <!-- </div> -->
-    </div>
     </div>
     </div>
     <!-- <div id='issaCard'>
@@ -51,11 +47,11 @@
         </v-layout>
     </div> -->
 
-  <ol>
+  <!-- <ol>
     <li v-for="todo in todos" :key="todo">
       {{ todo.text }}
     </li>
-  </ol>
+  </ol> -->
 </div>
 
 </template>
@@ -72,9 +68,9 @@
 
     .media {
         size: 2em;
-    }swqqQ
+    }
     .card {
-        margin-top: 2em;
+        margin: 2em 2em;
     }
 
     #items {
@@ -82,7 +78,8 @@
         /* padding-top: 4em;
         padding-left: 15em;
         padding-right: 15em; */
-        background-color:lightblue;
+        padding: 0.25em;
+        background-color:rgb(86, 97, 100);
     }
 
 </style>
@@ -91,15 +88,15 @@
   export default {
     data: () => ({
       cards: [
-        {title: 'Project1', link: '/static/github.png', description:''},
-        {title: 'Project1', link: '/static/github.png', description:''},
-        {title: 'Project1', link: '/static/github.png', description:''}
+        {title: 'Reverse Polish Notation Calculator', link: '/static/github.png', description:'Reverse Polish Notation (RPN) provides the quickest way to enter data in a calculator because it eliminates the need for parenthesis. It is a way of writing a mathematical expressions where each operand is preceded by the two operators it applies to'},
+        {title: 'Inpainting', link: '/static/github.png', description:'Inpainting is the process of reconstructing lost or deteriorated parts of images and videos. In the museum world, in the case of a valuable painting, this task would be carried out by a skilled art conservator or art restorer. In the digital world, inpainting (also known as image interpolation or video interpolation) refers to the application of sophisticated algorithms to replace lost or corrupted parts of the image data (mainly small regions or to remove small defects).'},
+        {title: 'Burger Queen', link: '/static/github.png', description:'the purpose of this project is to let you order your fast food through an app using MVC architecture thanks to JavaFX'}
       ],
-      todos: [
-      { text: 'Learn JavaScript' },
-      { text: 'Learn Vue' },
-      { text: 'Build something awesome' }
-    ]
+    //   todos: [
+    //   { text: 'Learn JavaScript' },
+    //   { text: 'Learn Vue' },
+    //   { text: 'Build something awesome' }
+    // ]
     })
     
   }
