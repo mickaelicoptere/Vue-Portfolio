@@ -13,7 +13,8 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' },
-      { rel: 'stylesheet', href:'https://unpkg.com/vuetify/dist/vuetify.min.css'}
+      { rel: 'stylesheet', href:'https://unpkg.com/vuetify/dist/vuetify.min.css'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'}
     ]
   },
 
@@ -26,6 +27,9 @@ module.exports = {
       { src: '~/plugins/vuetify.js', ssr: false }
     ],
 
+    css: [
+      'assets/css/main.css'
+    ],
   
   /*
   ** Build configuration
