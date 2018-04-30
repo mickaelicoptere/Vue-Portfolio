@@ -5,7 +5,7 @@
     <v-flex xs10 offset-xs1>
     <div class="card" v-for="card in cards" :key="card">
         <div class="card-content">
-            <p class="title">
+            <p class=".display-4">
                 {{card.title}}
             </p>
             <p class="subtitle">
