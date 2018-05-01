@@ -1,27 +1,13 @@
 <template>
-  <!-- <div class="container">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <p id='brand'>Mickaelicoptere</p>
-        <button class="button navbar-burger">
-        </button>
-      </div>
-      <div class="navbar-menu">
-        <div class="navbar-end">
-          <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
-          <nuxt-link class="navbar-item" to="/about">About</nuxt-link>
-          <nuxt-link class="navbar-item" to="/projects">Projects</nuxt-link>
-          <nuxt-link class="navbar-item" to="/contact">Contact</nuxt-link>
-        </div>
-      </div>
-    </nav>
-  </div> -->
+<div>
+
   <v-toolbar dense>
-      <nuxt-link class="link" to="/about">
-      <v-toolbar-side-icon>
+      <!-- <nuxt-link class="link" to="/about"> -->
+      <v-toolbar-side-icon @click.stop="drawer = !drawer">
+        
       </v-toolbar-side-icon>
-      </nuxt-link>
-      <v-toolbar-title>Mickael Lanier's portfolio</v-toolbar-title>
+      <!-- </nuxt-link> -->
+      <v-toolbar-title class=".display-3">Mickael Lanier's portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
         
       <router-link class="link" to="/">
@@ -42,15 +28,48 @@
       </v-btn>
       </nuxt-link>
     </v-toolbar>
+
+ <v-layout wrap>
+ <v-navigation-drawer
+      temporary
+      v-model="drawer"
+      absolute
+    >
+    <div class="container has-text-centered">
+        <img id="handsomeDude" src="~/assets/magrossetete.jpg">
+        <v-divider></v-divider>
+        <h1 class="title">19 years old</h1>
+          <h2 class="subtitle"><v-icon>location_on</v-icon>Nice, France</h2>
+    </div>
+    </v-navigation-drawer>
+ </v-layout>
+
+
+</div>
 </template>
 
 <style>
 #brand {
-    display: flex;
-    text-align: left;
-    padding-top: 1em;
+  display: flex;
+  text-align: left;
+  padding-top: 1em;
 }
 .link {
   color: black;
 }
+#handsomeDude {
+  margin: 3em 3em 3em 3em;
+  display: flex;
+  align-items: center;
+}
 </style>
+
+<script>
+export default {
+  data() {
+    return {
+      drawer: null
+    };
+  }
+};
+</script>

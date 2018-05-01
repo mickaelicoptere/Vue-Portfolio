@@ -24,7 +24,8 @@ module.exports = {
   loading: { color: '#3B8070' },
 
     plugins: [
-      { src: '~/plugins/vuetify.js', ssr: false }
+      { src: '~/plugins/vuetify.js', ssr: false },
+      { src: '~plugins/ga.js', ssr: false }
     ],
 
     css: [

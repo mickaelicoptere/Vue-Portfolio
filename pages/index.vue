@@ -2,13 +2,18 @@
   <section class="section is-large">
     <div class="container has-text-centered">
         <h1 id="title">Hi, I'm Mickael Lanier</h1>
-      <h2 class="subtitle">i'm a co-op student at UNSA institute of technology and i work for the Rector of Nice academy as an IT tech.</h2>
+      <h2 class="subtitle">I'm a <p id="bold">{{whoami}}</p> {{whatido}}</h2>
     </div>
   </section>
 </template>
 
 <script>
-
+export default{
+  data: () => ({
+    whoami: "co-op student",
+    whatido: "at UNSA institute of technology and i work for the Rector of Nice academy as an IT tech."
+  })
+}
 </script>
 
 <style>
@@ -20,5 +25,9 @@
   text-align: center;
   font-weight: 300;
   font-size: 4em;
+}
+#bold {
+  display: inline;
+  font-weight: bold;
 }
 </style>

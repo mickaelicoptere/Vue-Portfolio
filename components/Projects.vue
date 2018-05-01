@@ -1,14 +1,13 @@
 <template>
 <div class=projects>
     <div class="container">
-    <div id="items">
-    <v-flex xs10 offset-xs1>
+    <v-flex xs15>
     <div class="card" v-for="card in cards" :key="card">
         <div class="card-content">
-            <p class=".display-4">
+            <h1 class="title">
                 {{card.title}}
-            </p>
-            <p class="subtitle">
+            </h1>
+            <p class=".display-3">
                 {{card.description}}
             </p>
         </div>
@@ -21,7 +20,6 @@
         </footer>
     </div>
     </v-flex>
-    </div>
     </div>
     <!-- <div id='issaCard'>
         <v-layout>
@@ -52,6 +50,27 @@
       {{ todo.text }}
     </li>
   </ol> -->
+
+ <!-- <v-container grid-list-xl>
+    <v-layout v-bind="binding">
+      <v-flex>
+        <v-card dark color="primary">
+          <v-card-text>one</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex>
+        <v-card dark color="secondary">
+          <v-card-text>two</v-card-text>
+        </v-card>
+      </v-flex>
+      <v-flex>
+        <v-card dark color="accent">
+          <v-card-text>three</v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+  </v-container> -->
+
 </div>
 
 </template>
@@ -73,15 +92,6 @@
         margin: 2em 2em;
     }
 
-    #items {
-        /* padding: 4em 15em 4em 15em; */
-        /* padding-top: 4em;
-        padding-left: 15em;
-        padding-right: 15em; */
-        padding: 0.25em;
-        /* background-color:rgb(86, 97, 100); */
-    }
-
 </style>
 <script>
 
@@ -92,11 +102,6 @@
         {title: 'Inpainting', link: 'https://github.com/mickaelicoptere/Inpainting', description:'Inpainting is the process of reconstructing lost or deteriorated parts of images and videos. In the museum world, in the case of a valuable painting, this task would be carried out by a skilled art conservator or art restorer. In the digital world, inpainting (also known as image interpolation or video interpolation) refers to the application of sophisticated algorithms to replace lost or corrupted parts of the image data (mainly small regions or to remove small defects).'},
         {title: 'Burger Queen', link: 'https://github.com/mickaelicoptere/Burger_Queen', description:'the purpose of this project is to let you order your fast food through an app using MVC architecture thanks to JavaFX'}
       ],
-    //   todos: [
-    //   { text: 'Learn JavaScript' },
-    //   { text: 'Learn Vue' },
-    //   { text: 'Build something awesome' }
-    // ]
     })
   }
   
