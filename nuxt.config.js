@@ -46,7 +46,7 @@ module.exports = {
     { src: "~plugins/ga.js", ssr: false }
   ],
 
-  css: ["assets/css/main.css", "assets/css/animate.css"],
+  css: ["assets/css/main.css"],
 
   /*
   ** Build configuration
