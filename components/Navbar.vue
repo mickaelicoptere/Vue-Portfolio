@@ -7,7 +7,7 @@
         
       </v-toolbar-side-icon>
       <!-- </nuxt-link> -->
-      <v-toolbar-title class=".display-3">Mickael Lanier's portfolio</v-toolbar-title>
+      <v-toolbar-title class=".o">Mickael Lanier's portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
         
       <router-link class="link" to="/">
@@ -36,7 +36,7 @@
       absolute
     >
     <div class="container has-text-centered">
-        <img id="handsomeDude" src="~/assets/magrossetete.jpg">
+        <img id="handsomeBoi" src="~/assets/magrossetete.jpg">
         <v-divider></v-divider>
         <h1 class="title">19 years old</h1>
           <h2 class="subtitle"><v-icon>location_on</v-icon>Nice, France</h2>
@@ -56,9 +56,18 @@
 }
 .link {
   color: black;
+  background-image: linear-gradient(black, grey);
+  background-size: 0 5px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
 }
-#handsomeDude {
-  margin: 3em 3em 3em 3em;
+.link:hover {
+  background-size: 100% 5px, auto;
+}
+
+#handsomeBoi {
+  margin-top: 3rem;
   display: flex;
   align-items: center;
 }
