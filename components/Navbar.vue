@@ -15,8 +15,6 @@
         <v-icon>home</v-icon>
       </v-btn>
       </router-link>
-
-
       <nuxt-link class="link" to="/projects">
       <v-btn icon>
         <v-icon>apps</v-icon>
