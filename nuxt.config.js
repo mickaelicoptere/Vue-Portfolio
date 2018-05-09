@@ -48,6 +48,8 @@ module.exports = {
 
   css: ["assets/css/main.css"],
 
+  //module: ["xui-module"],
+
   /*
   ** Build configuration
   */
