@@ -9,7 +9,7 @@
       <section>
         <img src='~/assets/cert1.jpg'>
         <img src='~/assets/cert2.jpg'>
-      </section>
+        </section>
     </div>
   </section>
   
