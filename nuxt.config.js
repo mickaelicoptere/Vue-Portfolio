@@ -1,8 +1,4 @@
 module.exports = {
-  /* Gh-page */
-  router: {
-    base :'/Vue-Portfolio'
-  },
   /*
   ** Headers of the page
   */
