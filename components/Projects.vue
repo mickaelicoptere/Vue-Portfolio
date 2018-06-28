@@ -13,7 +13,7 @@
         <footer class="card-footer">
             <p class="card-footer-item">
                 <span>
-                    View on <a :href=card.link target="_blank">GitHub</a>
+                    View on <a :href=card.link target="_blank">GitHub !</a>
                 </span>
             </p>
         </footer>
