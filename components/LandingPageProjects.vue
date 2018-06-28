@@ -1,6 +1,6 @@
 <template>
             <v-layout column align-center justify-center>
-            <h1 id="title">Landing Page !?!</h1>
+            <h1 id="title">Landing Page !</h1>
             <v-flex xs12>
                 <v-container grid-list-xl>
                 <v-layout row wrap align-center>
