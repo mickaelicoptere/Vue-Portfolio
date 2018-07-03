@@ -1,15 +1,13 @@
 <template>
 <div>
 
-  <v-toolbar dense>
+  <v-toolbar>
       <!-- <nuxt-link class="link" to="/about"> -->
       <v-toolbar-side-icon @click.stop="drawer = !drawer">
-        
       </v-toolbar-side-icon>
       <!-- </nuxt-link> -->
       <v-toolbar-title class=".o">Mickael Lanier's portfolio</v-toolbar-title>
       <v-spacer></v-spacer>
-        
       <router-link class="link" to="/">
       <v-btn icon>
         <v-icon>home</v-icon>
@@ -46,7 +44,7 @@
 </div>
 </template>
 
-<style>
+<style scoped>
 #brand {
   display: flex;
   text-align: left;
