@@ -1,12 +1,12 @@
 <template>
     <div>
-        <v-content>
+        <v-container fluid full-height>
             <v-parallax :src="require('@/assets/hang5.png')" height="800">
             <v-layout
             column
             align-center
             justify-center>
-            <p>button</p>
+            <!-- <p>button</p> -->
              <v-btn
               class="grey"
               dark
@@ -18,7 +18,7 @@
             </v-layout>
             </v-parallax>
             <landing-page-projects/>
-       </v-content>
+            </v-container>
     </div>
 </template>
 

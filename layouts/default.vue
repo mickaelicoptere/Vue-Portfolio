@@ -1,14 +1,58 @@
 <template>
-  <div>
-    <navbar/>
-    <nuxt/>
-  </div>
+   <v-app>
+     <v-toolbar dense fixed app>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer">
+      </v-toolbar-side-icon>
+      <v-toolbar-title>Mickaelicoptere</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <router-link class="link" to="/">
+      <v-btn icon>
+        <v-icon>home</v-icon>
+      </v-btn>
+      </router-link>
+      <nuxt-link class="link" to="/projects">
+      <v-btn icon>
+        <v-icon>apps</v-icon>
+      </v-btn>
+      </nuxt-link>
+      <nuxt-link  class="link" to="/contact">
+      <v-btn icon>
+        <v-icon>mail</v-icon>
+      </v-btn>
+      </nuxt-link>
+      </v-toolbar>
+     <v-navigation-drawer
+      temporary
+      v-model="drawer"
+      :clipped="clipped"
+      fixed
+      app
+    >
+    <div class="container has-text-centered">
+        <img id="handsomeBoi" src="~/assets/magrossetete.jpg">
+        <v-divider></v-divider>
+        <h1 class="title">19 years old</h1>
+          <h2 class="subtitle"><v-icon>location_on</v-icon>Nice, France</h2>
+    </div>
+    </v-navigation-drawer>
+    <v-content>
+      <v-container fluid>
+        <nuxt/>
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
   import Navbar from '../components/Navbar'
 
   export default {
+    data() {
+    return {
+      drawer: null,
+      clipped: false
+    };
+  },  
     components: {
       Navbar
     }

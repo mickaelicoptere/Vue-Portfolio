@@ -11,7 +11,7 @@
 <script>
 export default {
   data: () => ({
-    whoami: "co-op student !",
+    whoami: "co-op student ",
     whatido:
       "at UNSA institute of technology and i work for the Rector of Nice academy as an IT tech."
   })
