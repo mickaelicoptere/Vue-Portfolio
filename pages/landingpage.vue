@@ -1,7 +1,7 @@
 <template>
     <div>
-        <v-container fluid full-height>
-            <v-parallax :src="require('@/assets/hang5.png')" height="800">
+        <v-content fluid fill-height>
+            <v-parallax :src="require('@/assets/hang5.png')" height="900">
             <v-layout
             column
             align-center
@@ -18,7 +18,7 @@
             </v-layout>
             </v-parallax>
             <landing-page-projects/>
-            </v-container>
+            </v-content>
     </div>
 </template>
 
@@ -28,7 +28,6 @@ export default {
     components: {
         LandingPageProjects
     }
-    
 }
 </script>
 

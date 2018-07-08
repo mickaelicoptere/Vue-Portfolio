@@ -1,6 +1,6 @@
 <template>
    <v-app>
-     <v-toolbar dense fixed app>
+     <!-- <v-toolbar dense fixed app>
       <v-toolbar-side-icon @click.stop="drawer = !drawer">
       </v-toolbar-side-icon>
       <v-toolbar-title>Mickaelicoptere</v-toolbar-title>
@@ -20,31 +20,31 @@
         <v-icon>mail</v-icon>
       </v-btn>
       </nuxt-link>
-      </v-toolbar>
-     <v-navigation-drawer
+      </v-toolbar> -->
+     <navbar/>
+    <v-content>
+        <nuxt/>
+      <!-- <v-navigation-drawer
       temporary
       v-model="drawer"
       :clipped="clipped"
       fixed
+      fluid
       app
     >
-    <div class="container has-text-centered">
-        <img id="handsomeBoi" src="~/assets/magrossetete.jpg">
+        <img src="~/assets/magrossetete.jpg">
         <v-divider></v-divider>
         <h1 class="title">19 years old</h1>
           <h2 class="subtitle"><v-icon>location_on</v-icon>Nice, France</h2>
-    </div>
-    </v-navigation-drawer>
-    <v-content>
-      <v-container fluid>
-        <nuxt/>
-      </v-container>
+    </v-navigation-drawer> -->
     </v-content>
+    <issafooter/>
   </v-app>
-</template>
+</template> 
 
 <script>
   import Navbar from '../components/Navbar'
+  import issafooter from '../components/issaFooter'
 
   export default {
     data() {
@@ -54,7 +54,8 @@
     };
   },  
     components: {
-      Navbar
+      Navbar,
+      issafooter
     }
   }
 </script>

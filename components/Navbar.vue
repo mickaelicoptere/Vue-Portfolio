@@ -36,7 +36,7 @@
       </v-btn>
       </nuxt-link>
   </v-toolbar>
-</div>
+ </div>
 </template>
 
 <style scoped>
