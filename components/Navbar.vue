@@ -16,24 +16,36 @@
     </v-navigation-drawer>
 
   <v-toolbar dense fixed app>
-      <v-toolbar-side-icon @click.stop="drawer = !drawer">
-      </v-toolbar-side-icon>
+      <v-tooltip bottom>
+        <v-toolbar-side-icon @click.stop="drawer = !drawer" slot="activator">
+        </v-toolbar-side-icon>
+        <span>About</span>
+      </v-tooltip>
       <v-toolbar-title>Mickaelicoptere</v-toolbar-title>
-      <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
       <router-link class="link" to="/">
-      <v-btn icon>
+      <v-tooltip bottom>
+      <v-btn slot="activator" icon>
         <v-icon>home</v-icon>
       </v-btn>
+      <span>Home</span>
+      </v-tooltip>
       </router-link>
       <nuxt-link class="link" to="/projects">
-      <v-btn icon>
+      <v-tooltip bottom>
+      <v-btn slot="activator" icon>
         <v-icon>apps</v-icon>
       </v-btn>
+      <span>Projects</span>
+      </v-tooltip>
       </nuxt-link>
       <nuxt-link  class="link" to="/contact">
-      <v-btn icon>
+      <v-tooltip bottom>
+      <v-btn slot="activator" icon>
         <v-icon>mail</v-icon>
       </v-btn>
+      <span>contacts</span>
+      </v-tooltip>
       </nuxt-link>
   </v-toolbar>
  </div>

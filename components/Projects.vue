@@ -10,7 +10,11 @@
                 {{card.description}}
             </p>
             <!-- TODO ADD IMG POUR PROJETS -->
-            <!-- <v-parallax v-bind:src="card.assets"/> -->
+            <!-- <v-card-media>
+            <v-parallax>
+              <img :src="card.assets"/>
+            </v-parallax>
+            </v-card-media> -->
         </div>
         <footer class="card-footer">
             <p class="card-footer-item">
@@ -103,7 +107,7 @@ export default {
           "https://github.com/mickaelicoptere/Reverse-Polish-Notation-Calculator",
         description:
           "Reverse Polish Notation (RPN) provides the quickest way to enter data in a calculator because it eliminates the need for parenthesis. It is a way of writing a mathematical expressions where each operand is preceded by the two operators it applies to",
-          assets: "assets/BQ-3.gif"
+          assets: ""
 
       },
       {
@@ -111,14 +115,14 @@ export default {
         link: "https://github.com/mickaelicoptere/Inpainting",
         description:
           "Inpainting is the process of reconstructing lost or deteriorated parts of images and videos. In the museum world, in the case of a valuable painting, this task would be carried out by a skilled art conservator or art restorer. In the digital world, inpainting (also known as image interpolation or video interpolation) refers to the application of sophisticated algorithms to replace lost or corrupted parts of the image data (mainly small regions or to remove small defects).",
-          assets: "require('@/assets/BQ-3.gif')"
+          assets: ""
       },
       {
         title: "Burger Queen",
         link: "https://github.com/mickaelicoptere/Burger_Queen",
         description:
           "the purpose of this project is to let you order your fast food through an app using MVC architecture thanks to JavaFX",
-        assets: "require('@/assets/BQ-3.gif')"
+        assets: "/images/BQ-3.gif"
       }
     ]
   })

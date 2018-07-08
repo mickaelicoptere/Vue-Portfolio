@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-content fluid fill-height>
-            <v-parallax :src="require('@/assets/hang5.png')" height="900">
+            <v-parallax src="/images/hang5.png" height="900">
             <v-layout
             column
             align-center
